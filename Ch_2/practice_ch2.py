@@ -1,4 +1,4 @@
-#This is code to see if it gets ignored. (Test)
+#This should NOT be ignored. (Test)
 print ("This is a test to see if It gets Ignored.")
 
 print("Hello, World!")
