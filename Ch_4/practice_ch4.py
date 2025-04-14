@@ -80,16 +80,30 @@ for player in players[-3:]:
     print (player.upper())
 
 
+#Copying a list:
+#       #The following code associates two variable names to the same list.
+#       #If you append one, you append the other, etc.
+team_a = players
+print (team_a)
 
+players.append("Obideskie")
+print(players)
+print (team_a)
 
-
-
-
-
-
-
-
-
+        #However to copy and create a SEPARATE list, do the following
+        #using the '[:]' copies players to team_a as a new list
+team_a = players[:]
+        #printing them makes the same list
+print("\n\nThe lists are the same for now.")
+print (f"\n\t{team_a}")
+print (f"\t{players}")
+players.append("Magic Mike")
+team_a.append("Kal Hoon")
+        #BUT when we append each list differently then print to see the results, we see each list is different
+            #Same-same... but different!
+print("\nThe lists have been appended differently to show they are separate lists:")
+print (f"\n\t{team_a}")
+print (f"\t{players}")
 
 
 

@@ -47,22 +47,30 @@ for cube in cubes:
 
 
 
+# 4-10 Slicing through a previous list:
+favorite_pizza = ["hawaiian", "bacon, pepperoni, and olive", "sausage", "jalapenos", "bell peppers", "onion"]
+print(f"The first three items of my fav pizza are: ")
+print(favorite_pizza [0:3])
+
+print("The middle items in my pizza list are:")
+print(favorite_pizza[2:4])
+
+print("the last items on my pizza list are:")
+print(favorite_pizza[4:6])
+
+# 4-11
+friends_pizza = favorite_pizza[:]
+del friends_pizza[1:3]
+friends_pizza.append('anchovies')
+print("\nThis is my pizza list:")
+print(f"\t{favorite_pizza}")
+print("\nThis is my friends pizza list:")
+print(f"\t{friends_pizza}")
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 4-12 For loop for a list
+for pizza in favorite_pizza:
+    print(f"\t{pizza.upper()}")
 
 
 
