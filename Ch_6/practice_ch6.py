@@ -160,12 +160,29 @@ for value in set(favorite_languages.values()):
 
 
 
+#Not part of this lessong but useful for learning
 
 
+prompt = "\nTell me something and I'll say it back: "
+prompt += "\nEnter'quit' to end the program."
+
+message =""
+
+while message != "quit":
+    message = input(prompt)
+    if message != 'quit':
+        print(message)
+    else:
+        print ("I forgot my underwear at the swimming pool.")
 
 
-
-
+active = True
+while active:
+    message = input(prompt)
+    if message == 'quit':
+        active = False
+    else:
+        print (message)
 
 
 
