@@ -1,4 +1,5 @@
 #=====================Chapter 8 Functions==================================
+from functions import build_profile
 
 #________________Defining a Function________________
 #Greet User
@@ -329,6 +330,7 @@ def build_profile (first, last, **user_info):
 user_profile = build_profile ('kyle', 'stoney', state ='washington', job ='arff', aspiration ='game design',
                               current_activity = 'testing', not_that_but = 'this', it_is = 'out of here!')
 print (user_profile)
+
 
 
 

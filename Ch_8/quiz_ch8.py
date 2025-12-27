@@ -1,4 +1,5 @@
 #=====================Chapter 8 Functions==================================
+from functions import build_profile
 
 #8-1. Message
 
@@ -216,6 +217,7 @@ my_car = cars ('subaru', 'crosstrek', color = 'grey', trim = "Limited", sunroof 
                remote_start = True)
 
 print (my_car)
+
 
 
 
