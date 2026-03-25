@@ -332,9 +332,19 @@ user_profile = build_profile ('kyle', 'stoney', state ='washington', job ='arff'
 print (user_profile)
 
 
+#++++++++++++++++++++ Importing an Entire Module +++++++++++++++++++++++++++++++
 
 
+import make_pizza
 
+make_pizza.pizza_order ("large", 'pan', "pepperoni", "extra Cheese")
+make_pizza.pizza_order ("medium", 'thin', 'haiwaiian')
+
+
+from make_pizza import pizza_order
+
+make_pizza.pizza_order ('small', 'classic', 'cheese', 'pickle', 'beef')
+make_pizza.pizza_order ('personal', 'pan', 'pepperoni', 'sausage')
 
 
 
